@@ -247,26 +247,17 @@ except KeyError:
     TORRENT_DIRECT_LIMIT = None
 try:
     CLONE_LIMIT = getConfig('CLONE_LIMIT')
-    if len(CLONE_LIMIT) == 0:
-        CLONE_LIMIT = None
-    else:
-        CLONE_LIMIT = float(CLONE_LIMIT)
+    CLONE_LIMIT = None if len(CLONE_LIMIT) == 0 else float(CLONE_LIMIT)
 except KeyError:
     CLONE_LIMIT = None
 try:
     MEGA_LIMIT = getConfig('MEGA_LIMIT')
-    if len(MEGA_LIMIT) == 0:
-        MEGA_LIMIT = None
-    else:
-        MEGA_LIMIT = float(MEGA_LIMIT)
+    MEGA_LIMIT = None if len(MEGA_LIMIT) == 0 else float(MEGA_LIMIT)
 except KeyError:
     MEGA_LIMIT = None
 try:
     TAR_UNZIP_LIMIT = getConfig('TAR_UNZIP_LIMIT')
-    if len(TAR_UNZIP_LIMIT) == 0:
-        TAR_UNZIP_LIMIT = None
-    else:
-        TAR_UNZIP_LIMIT = float(TAR_UNZIP_LIMIT)
+    TAR_UNZIP_LIMIT = None if len(TAR_UNZIP_LIMIT) == 0 else float(TAR_UNZIP_LIMIT)
 except KeyError:
     TAR_UNZIP_LIMIT = None
 try:
