@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM breakdowns/mega-sdk-python:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
