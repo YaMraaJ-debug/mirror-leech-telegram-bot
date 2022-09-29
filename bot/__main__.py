@@ -43,7 +43,7 @@ def stats(update, context):
             f'<b>├  🚀 RAM:</b> <code>{memory}%</code> ' \
             f'<b>├  🗄 DISK:</b> <code>{disk}%</code>' \
             f'<b>│</b>\n' \
-            f'<b>╰──「 🚸 @𝐘𝐚𝐦𝐫𝐚𝐚𝐣𝟎𝟎𝟕 🚸 」</b>'
+            f'<b>╰──「 🚸 #𝐘𝐚𝐦𝐫𝐚𝐚𝐣𝟎𝟎𝟕 🚸 」</b>'
     sendMessage(stats, context.bot, update)
 
 
